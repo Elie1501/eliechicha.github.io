@@ -10,6 +10,10 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+.same-font {
+  font-family: Arial, sans-serif;  /* Remplacez par la police utilisée sur le site */
+  font-size: 16px;  /* Définissez la taille de police souhaitée */
+}
 
 body {
   margin: 0;

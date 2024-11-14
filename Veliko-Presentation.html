@@ -201,53 +201,57 @@
 
 
 
-    <div id="fh5co-blog">
-        <div class="container">
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <h2>Difficultés Rencontrées</h2>
+
+
+<div id="fh5co-blog">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>Difficultés Rencontrées</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Carré avec icône carte -->
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <div class="blog-bg map-icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> <!-- Icône carte -->
+                    </div>
+                    <div class="blog-text">
+                        <h3>Recuperation des données depuis l'API</h3>
+                        <p>La récupération des données depuis l'API a été un défi, principalement parce qu'il s'agissait de manipuler des données externes qui ne sont pas stockées dans notre propre base de données.</p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <!-- Carré avec icône carte -->
-                <div class="col-md-4">
-                    <div class="fh5co-blog animate-box">
-                        <div class="blog-bg map-icon">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i> <!-- Icône carte -->
-                        </div>
-                        <div class="blog-text">
-                            <h3>Recuperation des données depuis l'API</h3>
-                            <p>La récupération des données depuis l'API a été un défi, principalement parce qu'il s'agissait de manipuler des données externes qui ne sont pas stockées dans notre propre base de données.</p>
-                        </div>
+            <!-- Carré avec une étoile -->
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <div class="blog-bg icon-database">
+                        <i class="icon-databaser"></i> <!-- Remplacer par une icône d'étoile -->
                     </div>
+                    <div class="blog-text">
+                        <h3>Manipulation Base de Données</h3>
+                        <p>
+                            La gestion de la base de données a présenté certaines complexités en lien avec la table user. Celle-ci ne se mettait pas systématiquement à jour lors des différentes manipulations sur le site, ce qui a entraîné des incohérences entre les informations affichées et les données réellement stockées. De plus, la base de données de mon collègue ne se liait pas correctement à la mienne, et inversement, ce qui compliquait la synchronisation des données entre nos environnements. La logique de synchronisation et la création des tables nécessaires étaient difficiles à concevoir, car il fallait s'assurer que chaque modification de données soit répercutée en temps réel sur toutes les parties du système.
+                        </p></div>
                 </div>
-                <!-- Carré avec une étoile -->
-                <div class="col-md-4">
-                    <div class="fh5co-blog animate-box">
-                        <div class="blog-bg star-icon">
-                            <i class="icon-star"></i> <!-- Remplacer par une icône d'étoile -->
-                        </div>
-                        <div class="blog-text">
-                            <h3>Gestion des favoris</h3>
-                            <p>La gestion des favoris a présenté une complexité supplémentaire, car il fallait synchroniser les choix des utilisateurs entre la carte et leur espace personnel, tout en enregistrant ces informations dans la base de données.</p>
-                        </div>
+            </div>
+            <!-- Carré avec icône de mail -->
+            <div class="col-md-4">
+                <div class="fh5co-blog animate-box">
+                    <div class="blog-bg mail-icon">
+                        <i class="icon-mail"></i> <!-- Remplacer par l'icône de mail -->
                     </div>
-                </div>
-                <!-- Carré avec icône de mail -->
-                <div class="col-md-4">
-                    <div class="fh5co-blog animate-box">
-                        <div class="blog-bg mail-icon">
-                            <i class="icon-mail"></i> <!-- Remplacer par l'icône de mail -->
-                        </div>
-                        <div class="blog-text">
-                            <h3>Gestion des mails</h3>
-                        <p>Pour implémenter l'envoi d'un lien de confirmation lors de la première connexion, on devait générer un token unique et envoyer par email un lien pour se connecter. Lorsqu'il clique sur le lien,on a du verifier le token et le mettre a jour dans la base de données, lui permettant ainsi de se connecter.</p></div>
+                    <div class="blog-text">
+                        <h3>Gestion des mails</h3>
+                        <p>Pour implémenter l'envoi d'un lien de confirmation lors de la première connexion, il a été nécessaire de générer un jeton (token) unique associé à l'utilisateur. Ce jeton a ensuite été envoyé par email sous forme de lien de confirmation. Lorsqu'un utilisateur clique sur ce lien, le système vérifie la validité du jeton reçu. Si le jeton est correct, son statut est mis à jour dans la base de données, ce qui lui permet d'activer son compte et de se connecter. J'ai également pris du temps a comprendre comment bloquer l'accée a un user qui n'avait pas verifé son compte</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+    </div>
+</div>
 
     <div id="fh5co-started" class="fh5co-bg-dark">
                 <div class="overlay"></div>

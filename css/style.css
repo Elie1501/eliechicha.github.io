@@ -18,6 +18,11 @@ body {
   color: #4d4d4d;
   background: #fff;
 }
+.same-font {
+  font-family: Arial, sans-serif;  /* Remplacez par la police utilisée sur le site */
+  font-size: 16px;  /* Définissez la taille de police souhaitée */
+}
+
 
 #page {
   position: relative;
